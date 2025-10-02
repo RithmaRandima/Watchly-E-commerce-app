@@ -8,15 +8,30 @@ import Cart from "./Pages/Cart";
 import LoginSignup from "./Pages/LoginSignup";
 import Footer from "./Components/Footer/Footer";
 
+import men_banner from "./Components/Assets/mens.png";
+import women_banner from "./Components/Assets/womens.png";
+import kids_banner from "./Components/Assets/kids.png";
+
 const App = () => {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Shop />} />
-        <Route path="/men" element={<ShopCategory category="men" />} />
-        <Route path="/women" element={<ShopCategory category="women" />} />
-        <Route path="/kids" element={<ShopCategory category="kids" />} />
+        <Route
+          path="/men"
+          element={
+            <ShopCategory banner={men_banner} category="men" name="Men's" />
+          }
+        />
+        <Route
+          path="/women"
+          element={<ShopCategory banner={women_banner} category="women" />}
+        />
+        <Route
+          path="/kids"
+          element={<ShopCategory banner={kids_banner} category="kids" />}
+        />
         <Route path="/product" element={<Product />}>
           <Route path=":productID" element={<Product />} />
         </Route>

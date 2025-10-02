@@ -13,6 +13,7 @@ const Popular = () => {
           return (
             <Items
               key={item.id}
+              id={item.id}
               image={item.image}
               name={item.name}
               item_price_new={item.new_price}

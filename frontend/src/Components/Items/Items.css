@@ -1,6 +1,7 @@
 .item {
   width: 270px;
   height: 100%;
+  margin: auto;
 }
 
 .item img {
