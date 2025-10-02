@@ -8,10 +8,18 @@ const ProductDisplay = (props) => {
     <div className="productdisplay">
       <div className="productdisplay-left">
         <div className="productdisplay-img-list">
-          <img src={product.image} alt="" />
-          <img src={product.image} alt="" />
-          <img src={product.image} alt="" />
-          <img src={product.image} alt="" />
+          <div>
+            <img src={product.image} alt="" />
+          </div>
+          <div>
+            <img src={product.image} alt="" />
+          </div>
+          <div>
+            <img src={product.image} alt="" />
+          </div>
+          <div>
+            <img src={product.image} alt="" />
+          </div>
         </div>
         <div className="productdisplay-main-img">
           <img src={product.image} alt="" />
@@ -40,11 +48,11 @@ const ProductDisplay = (props) => {
         <div className="productdisplay-right-size">
           <h1>Select Size</h1>
           <div className="productdisplay-right-size">
-            <div>S</div>
-            <div>M</div>
-            <div>L</div>
-            <div>XL</div>
-            <div>XXL</div>
+            <div className="sized-tag">S</div>
+            <div className="sized-tag">M</div>
+            <div className="sized-tag">L</div>
+            <div className="sized-tag">XL</div>
+            <div className="sized-tag">XXL</div>
           </div>
         </div>
         <button>ADD TO CART</button>
