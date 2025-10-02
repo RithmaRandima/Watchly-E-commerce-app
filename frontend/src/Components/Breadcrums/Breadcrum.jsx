@@ -8,7 +8,7 @@ const Breadcrum = (props) => {
   if (!product) return <div className="Breadcrum">Loading...</div>;
 
   return (
-    <div className="Breadcrum">
+    <div className="breadcrum">
       HOME <MdKeyboardArrowRight />
       SHOP <MdKeyboardArrowRight />
       {product.category} <MdKeyboardArrowRight />
